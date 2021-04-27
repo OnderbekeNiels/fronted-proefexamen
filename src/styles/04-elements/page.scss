@@ -1,0 +1,21 @@
+html {
+  background: map-get(map-get($palettes, color-neutral), 100);;
+}
+
+body {
+  font: #{ $base-font-size }/#{ $base-line-height } $font-stack-alpha;
+  color: map-get(map-get($palettes, color-neutral), 900);
+    box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a{
+  color: map-get(map-get($palettes, color-theme), 700);
+}
