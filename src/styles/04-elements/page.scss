@@ -15,7 +15,3 @@ body {
 *:after {
   box-sizing: inherit;
 }
-
-a{
-  color: map-get(map-get($palettes, color-theme), 700);
-}

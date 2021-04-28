@@ -1,11 +1,11 @@
 import React from 'react';
 
-function QuoteComponent({author, content}: {author: string, content: string}) {
+function QuoteComponent(props: any) {
     return (
-        <article className="c-quote">   
-            <svg className="c-quote__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000"><path d="M0 0h24v24H0z" fill="none" /><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" /></svg>
-            <h3 className="c-quote__content">{content.substring(3, content.length - 5)}</h3>
-            <p className="c-quote__author">- {author}</p>
+        <article className={`c-quote ${props.className}`}>
+            <p className="c-quote__icon">❞</p>
+            <h3 className="c-quote__content">{props.content.substring(0, 3) === "<p>" ? props.content.substring(3, props.content.length - 5) : props.content}</h3>
+            <p className="c-quote__author">- {props.author}</p>
         </article>
     )
 }

@@ -1,0 +1,33 @@
+.c-settings{
+    display: flex;
+    margin-bottom: rem(8px);
+}
+
+.c-settings__refresh{
+    display: flex;
+    align-items: center;
+    padding: rem(8px);
+}
+
+.c-setttings__label{
+    font-size: rem(14px);
+    font-weight: bold;
+}
+
+.c-settings__refresh-icon{
+    height: rem(16px);
+    margin-left: rem(8px);
+}
+
+.c-settings__colors{
+    display: flex;
+    align-items: center;
+    padding: rem(8px);
+}
+
+.c-settings__color-button{
+    padding: rem(8px);
+    border-radius: 100%;
+    background-color: black;
+    margin-left: rem(8px);
+}

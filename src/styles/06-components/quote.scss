@@ -1,13 +1,14 @@
 .c-quote{
     margin-bottom: rem(16px);
-    padding: rem(16px);
+    padding: rem(92px) rem(16px) rem(16px);
     text-align: center;
+    max-width: rem(700px);
 }
 
 .c-quote__icon{
     margin-bottom: rem(42px);
-    height: rem(56px);
-    width: rem(56px);
+    font-size: rem(56px);
+    font-weight: bold;
 }
 
 .c-quote__content{
