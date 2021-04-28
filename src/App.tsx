@@ -21,6 +21,7 @@ function App() {
     })
     console.log({ quotes });
     setQuotes(quotes);
+    setQuoteDisplay(quotes[0]);
   }
 
   useEffect(() => {
