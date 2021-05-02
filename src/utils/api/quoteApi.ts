@@ -5,3 +5,9 @@ export const getQuotes = async (): Promise<any[]> => {
     let data = await fetch('https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand&_=1619512519356');
     return data.json();
 }
+
+export const getData = async (endpoint: string) => {
+    return await fetch(endpoint)
+        .then((r) => { return r.json()})
+        .catch(err => console.error("Something went wrong: ", err));
+}
